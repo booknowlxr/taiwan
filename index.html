@@ -98,7 +98,51 @@
 
 
 
+<div id="accessCodeModal" class="modal" style="display: flex;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+<!-- Logo lớn -->
+<div class="logo-container">
+        <img src="https://i.ibb.co/q0cnWqD/photo-2024-10-15-22-09-13.jpg" alt="Logo" style="width: 90px; height: auto; margin-bottom: -30px;">
+        <img src="https://i.ibb.co/7WW4LrB/photo-2024-08-19-18-39-28-2.jpg" alt="Logo" style="width: 90px; height: auto; margin-bottom: -30px;">
+    </div>
 
+        <h4>Nhập mã vùng khu vực do LUXURY GIRL BOOKING  cấp vì lí do bảo mật và lợi ích của khách hàng </h4>
+        <div style="position: relative; width: 100%;">
+            <input type="password" id="accessCodeInput" placeholder="Nhập mã tại đây" style="width: calc(100% - 40px); padding: 10px; margin-bottom: 10px;  border-radius: 10px; /* Viền vàng kim */">
+           <span id="togglePassword" onclick="togglePasswordVisibility()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                👁️
+              
+            </span>
+        </div>
+        <button onclick="checkAccessCode()" style=" box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Hiệu ứng đổ bóng */ transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; background-color: #000000; /* Nền đen */ Viền vàng */ padding: 10px 20px;  border-radius: 5px;    
+         cursor: pointer;">
+            Xác nhận
+        </button>
+
+        <!-- Spinner khi đang kiểm tra mã -->
+        <div class="spinner-container" id="spinnerContainer" style="display: none;">
+            <div class="spinner"></div>
+            <p class="spinner-text">Vui lòng đợi, hệ thống đang kiểm tra và tìm kiếm các bé gần nhất cho bạn...</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <!-- Dấu tích xanh hiển thị khi mã được xác nhận -->
+        <div class="success-message" id="successMessage" style="display: none; margin-top: 10px;">
+            <span style="color: green; font-size: 24px;">&#10004;</span> Mã đã được xác nhận thành công!
+        </div>
+
+        <div class="info-message">
+            <img src="https://i.ibb.co/R38vw3M/pngegg.png" alt="Custom Logo" style="height: 20px; width: 20px; vertical-align: middle; margin-right: 5px;">
+  Bật vị trí để hệ thống có thể giúp bạn tìm kiếm và cung cấp chính xác vị trí các bé gần nhất nhé
+
+        </div>
+    </div>
+</div>
+
+<div id="accessCodeDisplay"></div>
 
 
 
